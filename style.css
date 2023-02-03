@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+.control {
+  width: 640px;
+  height: 360px;
+  background-color: #000;
+}
