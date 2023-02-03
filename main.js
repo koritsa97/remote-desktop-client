@@ -15,3 +15,11 @@ controlElem.onmousemove = throttle((e) => {
 
   socket.emit('control', coords);
 }, 100);
+
+controlElem.onclick = (e) => {
+  const coords = {
+    x: e.x / e.target.clientWidth,
+    y: e.y / e.target.clientHeight,
+  };
+  socket.emit('click', coords);
+};
